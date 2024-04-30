@@ -6,7 +6,7 @@ const firebaseConfig = {
     apiKey: `{FIREBASE_API_KEY}`,
     authDomain: `{FIREBASE_AUTH_DOMAIN}`,
     projectId: `{FIREBASE_PROJECT_ID}`,
-    storageBucket: "react-portfolio-e0d85.appspot.com",
+    storageBucket: `{FIREBASE_STORAGE_BUCKET}`,
     messagingSenderId: "249047522356",
     appId: `{FIREBASE_APP_ID}`,
     measurementId: `{FIREBASE_MEASUREMENT_ID}`
