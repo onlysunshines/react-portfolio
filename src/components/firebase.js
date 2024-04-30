@@ -7,7 +7,7 @@ const firebaseConfig = {
     authDomain: `{FIREBASE_AUTH_DOMAIN}`,
     projectId: `{FIREBASE_PROJECT_ID}`,
     storageBucket: `{FIREBASE_STORAGE_BUCKET}`,
-    messagingSenderId: "249047522356",
+    messagingSenderId: `{FIREBASE_MESSAGING_SENDER_ID}`,
     appId: `{FIREBASE_APP_ID}`,
     measurementId: `{FIREBASE_MEASUREMENT_ID}`
   };
