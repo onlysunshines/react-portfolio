@@ -19,3 +19,4 @@ const firestore = getFirestore(app);
 
 // Shut up ES-Lint
 console.log(analytics);
+console.log(firestore);
