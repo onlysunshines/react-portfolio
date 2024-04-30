@@ -1,0 +1,96 @@
+[debug] [2024-04-29T23:01:30.835Z] ----------------------------------------------------------------------
+[debug] [2024-04-29T23:01:30.837Z] Command:       /Users/onlysun/.nvm/versions/node/v18.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2024-04-29T23:01:30.838Z] CLI Version:   9.6.1
+[debug] [2024-04-29T23:01:30.838Z] Platform:      darwin
+[debug] [2024-04-29T23:01:30.838Z] Node Version:  v18.7.0
+[debug] [2024-04-29T23:01:30.839Z] Time:          Mon Apr 29 2024 17:01:30 GMT-0600 (Mountain Daylight Time)
+[debug] [2024-04-29T23:01:30.840Z] ----------------------------------------------------------------------
+[debug] [2024-04-29T23:01:30.840Z] 
+[debug] [2024-04-29T23:01:30.844Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-29T23:01:30.845Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/onlysun/proProgrammer/Self-Made/react-portfolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-29T23:02:12.163Z] > refreshing access token with scopes: []
+[debug] [2024-04-29T23:02:12.164Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-04-29T23:02:12.409Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 29 Apr 2024 23:02:12 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-04-29T23:02:12.411Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-04-29T23:02:12.682Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2024-04-29T23:02:12.682Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2024-04-29T23:02:12.683Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-04-29T23:02:12.684Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.request (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async getProjectPage (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:232:17)
+    at async getFirebaseProjectPage (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:249:23)
+    at async selectProjectInteractively (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/usr/local/lib/node_modules/firebase-tools/lib/init/features/project.js:87:27)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2024-04-29T23:06:37.130Z] ----------------------------------------------------------------------
+[debug] [2024-04-29T23:06:37.131Z] Command:       /Users/onlysun/.nvm/versions/node/v18.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2024-04-29T23:06:37.131Z] CLI Version:   9.6.1
+[debug] [2024-04-29T23:06:37.132Z] Platform:      darwin
+[debug] [2024-04-29T23:06:37.132Z] Node Version:  v18.7.0
+[debug] [2024-04-29T23:06:37.133Z] Time:          Mon Apr 29 2024 17:06:37 GMT-0600 (Mountain Daylight Time)
+[debug] [2024-04-29T23:06:37.134Z] ----------------------------------------------------------------------
+[debug] [2024-04-29T23:06:37.134Z] 
+[debug] [2024-04-29T23:06:37.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-29T23:06:37.139Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/onlysun/proProgrammer/Self-Made/react-portfolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-29T23:06:42.566Z] > refreshing access token with scopes: []
+[debug] [2024-04-29T23:06:42.567Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-04-29T23:06:42.827Z] <<< HTTP RESPONSE 400 {"pragma":"no-cache","date":"Mon, 29 Apr 2024 23:06:42 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-04-29T23:06:42.829Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-04-29T23:06:43.103Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2024-04-29T23:06:43.103Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2024-04-29T23:06:43.104Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-04-29T23:06:43.104Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.request (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async getProjectPage (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:232:17)
+    at async getFirebaseProjectPage (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:249:23)
+    at async selectProjectInteractively (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/usr/local/lib/node_modules/firebase-tools/lib/init/features/project.js:87:27)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
