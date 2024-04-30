@@ -5,7 +5,7 @@ import { getFirestore } from "@firebase/firestore";
 const firebaseConfig = {
     apiKey: `{FIREBASE_API_KEY}`,
     authDomain: `{FIREBASE_AUTH_DOMAIN}`,
-    projectId: "react-portfolio-e0d85",
+    projectId: `{FIREBASE_PROJECT_ID}`,
     storageBucket: "react-portfolio-e0d85.appspot.com",
     messagingSenderId: "249047522356",
     appId: `{FIREBASE_APP_ID}`,
