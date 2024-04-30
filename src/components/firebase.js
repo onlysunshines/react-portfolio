@@ -1,8 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAO3RymFYZ-N7zNl7HuFuO38zB24gT8c1U",
+    apiKey: `{FIREBASE_API_KEY}`,
     authDomain: "react-portfolio-e0d85.firebaseapp.com",
     projectId: "react-portfolio-e0d85",
     storageBucket: "react-portfolio-e0d85.appspot.com",
@@ -14,6 +15,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const firestore = getFirestore(app);
 
 // Shut up ES-Lint
 console.log(analytics);
