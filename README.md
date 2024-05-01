@@ -1,6 +1,8 @@
 # Yo Sun, Welcome to it son!
+
 ## for the algorithm
-### hold the rhythm  
+
+### hold the rhythm
 
 # Getting Started with Create React App
 
