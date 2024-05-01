@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import headerImg from '../assets/img/header-img.svg';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
@@ -6,6 +6,13 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
+    const NewTitle = () => {
+        useEffect(() => {
+            document.title = 'Tomas Mier';
+        }, []);
+    }
+        NewTitle();
+    
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -24,7 +31,6 @@ export const Banner = () => {
         return () => { clearInterval(ticker) };
         // eslint-disable-next-line
     }, [text])
-    
 
     const tick = () => {
         let i = loopNum % toRotate.length;
