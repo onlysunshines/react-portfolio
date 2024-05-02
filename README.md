@@ -1,4 +1,4 @@
-# Yo Sun, Welcome to it son!
+# Yo Sun, Welcome to it son! 🌞
 
 ## for the algorithm
 
