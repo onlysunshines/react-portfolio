@@ -81,9 +81,33 @@ export const Projects = () => {
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="second">
                                             <p>Let him cook 👨‍🍳</p>
+                                            <Row>
+                                                {
+                                                    projects.map((project, index) => {
+                                                        return (
+                                                            <ProjectCard
+                                                                key={index}
+                                                                {...project}
+                                                                />
+                                                        )
+                                                    })
+                                                }
+                                            </Row>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="third">
                                             <p>Let him cook 👨‍🍳</p>
+                                            <Row>
+                                                {
+                                                    projects.map((project, index) => {
+                                                        return (
+                                                            <ProjectCard
+                                                                key={index}
+                                                                {...project}
+                                                                />
+                                                        )
+                                                    })
+                                                }
+                                            </Row>
                                         </Tab.Pane>
                                     </Tab.Content>
                                 </Tab.Container>
