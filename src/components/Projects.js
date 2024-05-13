@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
-import projImg1 from '../assets/img/project-img1.png';
+import projImg1 from '../assets/img/coffeeShopRock2.jpg';
 import projImg2 from '../assets/img/project-img2.png';
 import projImg3 from '../assets/img/project-img3.png';
 import projImg4 from '../assets/img/jQueryQuiz3.jpg';
@@ -23,19 +23,19 @@ export const Projects = () => {
             title: "Landing Page",
             description: "Dom Manipulation",
             imgUrl: projImg5,
-            location: "",
+            location: "https://onlysunshines.github.io/landingPage/",
         },
         {
             title: "Boggin' About",
             description: "You must be boggin' kidding me",
             imgUrl: projImg6,
-            location: "",
+            location: "https://onlysunshines.github.io/personalBlog/",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Coffee Shop",
+            description: "Ground beans for the brew",
             imgUrl: projImg1,
-            location: "",
+            location: "https://onlysunshines.github.io/coffee-shop-rock/",
         },
         {
             title: "Business Startup",
