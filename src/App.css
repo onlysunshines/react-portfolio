@@ -48,11 +48,19 @@ p, a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
-  text-decoration: none;
+  text-decoration: none !important;
 }
+
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+
+}
+
 
 a:hover {
   text-decoration: none;
+  color: #121212 !important;
 }
 
 img {

@@ -17,31 +17,37 @@ export const Projects = () => {
             title: "jQuery Quiz",
             description: "Test your skills",
             imgUrl: projImg4,
+            location: "https://onlysunshines.github.io/quiz-app/",
         },
         {
             title: "Landing Page",
             description: "Dom Manipulation",
             imgUrl: projImg5,
+            location: "",
         },
         {
             title: "Boggin' About",
             description: "You must be boggin' kidding me",
             imgUrl: projImg6,
+            location: "",
         },
         {
             title: "Business Startup",
             description: "Design & Development",
             imgUrl: projImg1,
+            location: "",
         },
         {
             title: "Business Startup",
             description: "Design & Development",
             imgUrl: projImg2,
+            location: "",
         },
         {
             title: "Business Startup",
             description: "Design & Development",
             imgUrl: projImg3,
+            location: "",
         },
     ];
 
