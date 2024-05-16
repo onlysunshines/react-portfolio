@@ -54,78 +54,78 @@ export const Projects = () => {
     const projects2 = [
         {
             title: "Stay Tuned",
-            description: "Chef is in the kitchen",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "https://onlysunshines.github.io/quiz-app/",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Landing Page",
-            description: "Dom Manipulation",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "https://onlysunshines.github.io/landingPage/",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Boggin' About",
-            description: "You must be boggin' kidding me",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "https://onlysunshines.github.io/personalBlog/",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Coffee Shop",
-            description: "Ground beans for the brew",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "https://onlysunshines.github.io/coffee-shop-rock/",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "",
+            location: "https://tomasmier.xyz",
         },
     ];
 
     const projects3 = [
         {
-            title: "jQuery Quiz",
-            description: "Test your skills",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "https://onlysunshines.github.io/quiz-app/",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Landing Page",
-            description: "Dom Manipulation",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "https://onlysunshines.github.io/landingPage/",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Boggin' About",
-            description: "You must be boggin' kidding me",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "https://onlysunshines.github.io/personalBlog/",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Coffee Shop",
-            description: "Ground beans for the brew",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "https://onlysunshines.github.io/coffee-shop-rock/",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "",
+            location: "https://tomasmier.xyz",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Stay Tuned",
+            description: "Let him cook 👨‍🍳",
             imgUrl: stayTuned5,
-            location: "",
+            location: "https://tomasmier.xyz",
         },
     ];
 
@@ -168,7 +168,7 @@ export const Projects = () => {
                                             </Row>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="second">
-                                            <p>Let him cook 👨‍🍳</p>
+                                            <p>Chef is in the kitchen 🍳</p>
                                             <Row>
                                                 {
                                                     projects2.map((project, index) => {
@@ -183,7 +183,7 @@ export const Projects = () => {
                                             </Row>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="third">
-                                            <p>Let him cook 👨‍🍳</p>
+                                            <p>Chef is in the kitchen 🍳</p>
                                             <Row>
                                                 {
                                                     projects3.map((project, index) => {
