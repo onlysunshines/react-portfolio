@@ -7,6 +7,7 @@ import projImg4 from '../assets/img/jQueryQuiz3.jpg';
 import projImg5 from '../assets/img/landingPage.jpg';
 import projImg6 from '../assets/img/bogBlog.jpg';
 import colorSharp2 from '../assets/img/color-sharp2.png';
+import stayTuned5 from '../assets/img/stayTuned5.jpg';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -50,6 +51,83 @@ export const Projects = () => {
             location: "",
         },
     ];
+    const projects2 = [
+        {
+            title: "Stay Tuned",
+            description: "Chef is in the kitchen",
+            imgUrl: stayTuned5,
+            location: "https://onlysunshines.github.io/quiz-app/",
+        },
+        {
+            title: "Landing Page",
+            description: "Dom Manipulation",
+            imgUrl: stayTuned5,
+            location: "https://onlysunshines.github.io/landingPage/",
+        },
+        {
+            title: "Boggin' About",
+            description: "You must be boggin' kidding me",
+            imgUrl: stayTuned5,
+            location: "https://onlysunshines.github.io/personalBlog/",
+        },
+        {
+            title: "Coffee Shop",
+            description: "Ground beans for the brew",
+            imgUrl: stayTuned5,
+            location: "https://onlysunshines.github.io/coffee-shop-rock/",
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: stayTuned5,
+            location: "",
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: stayTuned5,
+            location: "",
+        },
+    ];
+
+    const projects3 = [
+        {
+            title: "jQuery Quiz",
+            description: "Test your skills",
+            imgUrl: stayTuned5,
+            location: "https://onlysunshines.github.io/quiz-app/",
+        },
+        {
+            title: "Landing Page",
+            description: "Dom Manipulation",
+            imgUrl: stayTuned5,
+            location: "https://onlysunshines.github.io/landingPage/",
+        },
+        {
+            title: "Boggin' About",
+            description: "You must be boggin' kidding me",
+            imgUrl: stayTuned5,
+            location: "https://onlysunshines.github.io/personalBlog/",
+        },
+        {
+            title: "Coffee Shop",
+            description: "Ground beans for the brew",
+            imgUrl: stayTuned5,
+            location: "https://onlysunshines.github.io/coffee-shop-rock/",
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: stayTuned5,
+            location: "",
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: stayTuned5,
+            location: "",
+        },
+    ];
 
     return (
         <section className="project" id="projects">
@@ -75,6 +153,7 @@ export const Projects = () => {
                                     </Nav>
                                     <Tab.Content id="slideInUp" className={isVisible ? "animate_animated animate_slideInUp" : ""}>
                                         <Tab.Pane eventKey="first">
+                                            <p>Order Up 🍲</p>
                                             <Row>
                                                 {
                                                     projects.map((project, index) => {
@@ -92,7 +171,7 @@ export const Projects = () => {
                                             <p>Let him cook 👨‍🍳</p>
                                             <Row>
                                                 {
-                                                    projects.map((project, index) => {
+                                                    projects2.map((project, index) => {
                                                         return (
                                                             <ProjectCard
                                                                 key={index}
@@ -107,7 +186,7 @@ export const Projects = () => {
                                             <p>Let him cook 👨‍🍳</p>
                                             <Row>
                                                 {
-                                                    projects.map((project, index) => {
+                                                    projects3.map((project, index) => {
                                                         return (
                                                             <ProjectCard
                                                                 key={index}
