@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "animate.css-react": "^1.1.0",
     "bootstrap": "^5.3.3",
-    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "caniuse-lite": "^1.0.30001717",
     "cors": "^2.8.5",
     "express": "^4.19.2",
@@ -29,10 +29,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "eslintConfig": {
     "extends": [
