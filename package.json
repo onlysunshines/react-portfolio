@@ -9,6 +9,8 @@
     "animate.css": "^4.1.1",
     "animate.css-react": "^1.1.0",
     "bootstrap": "^5.3.3",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "caniuse-lite": "^1.0.30001717",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "firebase": "^10.11.1",
