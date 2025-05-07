@@ -21,7 +21,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const period = 900;
 
-    console.log(index);
+    //console.log(index);
 
     useEffect(() => {
         let ticker = setInterval(() => {
