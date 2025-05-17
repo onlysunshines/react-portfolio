@@ -16,8 +16,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 console.log("EMAIL_USER:", process.env.EMAIL_USER);
-console.log("GOOGLE_PASS:", process.env.GOOGLE_PASS);
-console.log(process.env.EMAIL_PASS)
+console.log("PASS length", process.env.GOOGLE_PASS.length);
 
 const contactEmail = nodemailer.createTransport({
     host: "smtp.gmail.com",
