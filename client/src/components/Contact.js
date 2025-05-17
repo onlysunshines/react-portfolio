@@ -27,7 +27,7 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch("https://react-portfolio-vzy0.onrender.com/contact", {
+        let response = await fetch("https://react-portfolio-vzy0.onrender.com/connect", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
