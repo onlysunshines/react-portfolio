@@ -12,23 +12,34 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+console.log("EMAIL_USER:", process.env.EMAIL_USER);
+console.log("GOOGLE_PASS:", process.env.GOOGLE_PASS);
+console.log(process.env.EMAIL_PASS)
 
 const contactEmail = nodemailer.createTransport({
-    service: 'gmail',
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-        user: "tomasmier@gmail.com",
+        user: `${process.env.EMAIL_USER}`,
         pass: `${process.env.GOOGLE_PASS}`,
     },
 });
 
+console.log("EMAIL:", process.env.EMAIL_USER);
+console.log("PASS length:", process.env.GOOGLE_PASS.length);
+
 router.post("/contact", (req, res) => {
-    const name = req.body.firstName + req.body.lastName;
+    const name = req.body.firstName + " " + req.body.lastName;
     const email = req.body.email;
     const message = req.body.message;
     const phone = req.body.phone;
+
+    console.log("Incoming contact form data:", req.body);
+
     const mail = {
         from: name,
         to: "tomasmier@gmail.com",
@@ -38,11 +49,13 @@ router.post("/contact", (req, res) => {
                 <p>Phone: ${phone}</p>
                 <p>Message: ${message}</p>`,
     };
+
     contactEmail.sendMail(mail, (error) => {
         if (error) {
-            res.json(error);
+            console.error("Email send error:", error); // helpful for Render logs
+            return res.status(500).json({ code: 500, status: "Message Failed", error: error.toString() });
         } else {
-            res.json({ code: 200, status: "Message Sent" });
+            return res.status(200).json({ code: 200, status: "Message Sent" });
         }
     });
 });
