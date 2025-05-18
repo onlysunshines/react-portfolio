@@ -3,7 +3,7 @@
 export const Certs = () => {
     
     return (
-        <section className="cert" id="certs">
+        <section className="skill" id="skills">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
