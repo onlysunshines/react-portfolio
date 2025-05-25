@@ -1,4 +1,4 @@
-import FrontEndCertificate from '../assets/img/Front End Certificate';
+import FrontEndCertificate from '../assets/img/FrontEndCertificate';
 
 export const Certs = () => {
     
