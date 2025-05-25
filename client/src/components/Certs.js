@@ -10,7 +10,7 @@ export const Certs = () => {
                         <div className="skill-bx wow zoomIn">
                             <h2>Certifications</h2>
                             <img src={FrontEndCertificate} alt="Front End Web Development certificate from Udacity"/>
-                            <a href="https://confirm.udacity.com/e/b8f11b08-079b-11ed-8bb2-7725eccbe477">Confirm Certificate Here</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://confirm.udacity.com/e/b8f11b08-079b-11ed-8bb2-7725eccbe477">Confirm Certificate Here</a>
                             <p>I am constantly improving my knowledge base and expanding my comfort zone.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         </div>
                     </div>                    
