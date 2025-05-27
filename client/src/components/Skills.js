@@ -1,6 +1,10 @@
-import meter1 from '../assets/img/meter1.svg';
-import meter2 from '../assets/img/meter2.svg';
-import meter3 from '../assets/img/meter3.svg';
+import HTML5 from '../assets/img/HTML5.png';
+import CSS3 from '../assets/img/CSS3.png';
+import JS5 from '../assets/img/JS.png';
+import EX from '../assets/img/Express.png';
+import NodeJS from '../assests/img/NodeJS.png';
+import Tailscale from '../assets/img/Tailscale.png';
+import Render from '../assets/img/Render.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from '../assets/img/color-sharp.png';
@@ -37,31 +41,31 @@ export const Skills = () => {
                             <p>I am constantly improving my knowledge base and expanding my comfort zone.<br></br>This is my current Full Stack Work Flow List of Frameworks/Languages/Applications</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Meter" />
+                                    <img src={HTML5} alt="Meter" />
                                     <h5>HTML</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Meter" />
+                                    <img src={CSS3} alt="Meter" />
                                     <h5>CSS</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Meter" />
+                                    <img src={JS5} alt="Meter" />
                                     <h5>JavaScript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Meter" />
+                                    <img src={EX} alt="Meter" />
                                     <h5>Express</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Meter" />
-                                    <h5>Node</h5>
+                                    <img src={NodeJS} alt="Meter" />
+                                    <h5>Node JS</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Meter" />
+                                    <img src={Tailscale} alt="Meter" />
                                     <h5>Tailscale</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Meter" />
+                                    <img src={Render} alt="Meter" />
                                     <h5>Render</h5>
                                 </div>
                             </Carousel>
