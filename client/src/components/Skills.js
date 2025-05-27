@@ -2,7 +2,7 @@ import HTML5 from '../assets/img/HTML5.png';
 import CSS3 from '../assets/img/CSS3.png';
 import JS5 from '../assets/img/JS.png';
 import EX from '../assets/img/Express.png';
-import NodeJS from '../assests/img/NodeJS.png';
+import NodeJS from '../assets/img/NodeJS.png';
 import Tailscale from '../assets/img/Tailscale.png';
 import Render from '../assets/img/Render.png';
 import Carousel from 'react-multi-carousel';
