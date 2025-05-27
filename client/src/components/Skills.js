@@ -5,6 +5,7 @@ import EX from '../assets/img/Express.png';
 import NodeJS from '../assets/img/NodeJS.png';
 import Tailscale from '../assets/img/Tailscale.png';
 import Render from '../assets/img/Render.png';
+import Firebase from '../assets/img/Firebase.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from '../assets/img/color-sharp.png';
@@ -67,6 +68,10 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={Render} alt="Render Logo" />
                                     <h5>Render</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={Firebase} alt="Render Logo" />
+                                    <h5>Firebase</h5>
                                 </div>
                             </Carousel>
                         </div>
