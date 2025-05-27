@@ -41,31 +41,31 @@ export const Skills = () => {
                             <p>I am constantly improving my knowledge base and expanding my comfort zone.<br></br>This is my current Full Stack Work Flow List of Frameworks/Languages/Applications</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <img src={HTML5} alt="Meter" />
+                                    <img src={HTML5} alt="HTML Logo" />
                                     <h5>HTML</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={CSS3} alt="Meter" />
+                                    <img src={CSS3} alt="CSS Logo" />
                                     <h5>CSS</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={JS5} alt="Meter" />
+                                    <img src={JS5} alt="JavaScript Logo" />
                                     <h5>JavaScript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={EX} alt="Meter" />
+                                    <img src={EX} alt="Express Logo" />
                                     <h5>Express</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={NodeJS} alt="Meter" />
+                                    <img src={NodeJS} alt="Node JS Logo" />
                                     <h5>Node JS</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Tailscale} alt="Meter" />
+                                    <img src={Tailscale} alt="Tailscale Logo" />
                                     <h5>Tailscale</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Render} alt="Meter" />
+                                    <img src={Render} alt="Render Logo" />
                                     <h5>Render</h5>
                                 </div>
                             </Carousel>
