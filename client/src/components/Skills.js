@@ -33,24 +33,36 @@ export const Skills = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
-                            <h2>Skills</h2>
-                            <p>I am constantly improving my knowledge base and expanding my comfort zone.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <h2>Technological Stack</h2>
+                            <p>I am constantly improving my knowledge base and expanding my comfort zone.<br></br>This is my current Full Stack Work Flow List of Frameworks/Languages/Applications</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Meter" />
-                                    <h5>Web Development</h5>
+                                    <h5>HTML</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Meter" />
-                                    <h5>Brand Identity</h5>
+                                    <h5>CSS</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter3} alt="Meter" />
-                                    <h5>Logo Design</h5>
+                                    <h5>JavaScript</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter1} alt="Meter" />
-                                    <h5>UI/UX Design</h5>
+                                    <h5>Express</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Meter" />
+                                    <h5>Node</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Meter" />
+                                    <h5>Tailscale</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Meter" />
+                                    <h5>Render</h5>
                                 </div>
                             </Carousel>
                         </div>
