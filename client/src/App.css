@@ -341,13 +341,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"]
   border-right: 0.08em solid #666;
 }
 
-/* --Skills CSS-- */
-.skill {
+/* --TechStack CSS-- */
+.techstack {
   padding: 0 0 50px 0;
   position: relative;
 }
 
-.skill-bx {
+.techstack-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
@@ -355,12 +355,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"]
   margin-top: -60px;
 }
 
-.skill h2 {
+.techstack h2 {
   font-size: 45px;
   font-weight: 700;
 }
 
-.skill p {
+.techstack p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -368,13 +368,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"]
   margin: 14px 0 75px 0;
 }
 
-.skill-slider {
+.techstack-slider {
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
 
-.skill-slider .item img {
+.techstack-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
 }

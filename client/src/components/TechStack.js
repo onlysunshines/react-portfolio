@@ -32,7 +32,7 @@ export const TechStack = () => {
     };
 
     return (
-        <section className="skill" id="skills">
+        <section className="techstack" id="techstacks">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
