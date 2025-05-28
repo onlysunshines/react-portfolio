@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import { Certs } from './components/Certs';
-import { Skills } from './components/Skills';
+import { TechStack } from './components/TechStack';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -16,8 +16,8 @@ function App() {
       <NavBar />
       <Banner />
       <Certs />
-      <Skills />
-      <Projects />f
+      <TechStack />
+      <Projects />
       <Contact />
       <Footer />
     </div>

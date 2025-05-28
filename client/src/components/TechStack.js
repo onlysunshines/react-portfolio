@@ -40,7 +40,6 @@ export const Skills = () => {
                         <div className="skill-bx wow zoomIn">
                             <h2>Technological Stack</h2>
                             <p>I am constantly improving my knowledge base and expanding my comfort zone.<br></br>This is my current Full Stack Work Flow List of Frameworks/Languages/Applications</p>
-                            <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={HTML5} alt="HTML Logo" />
                                     <h5>HTML</h5>
@@ -73,7 +72,6 @@ export const Skills = () => {
                                     <img src={Firebase} alt="Render Logo" />
                                     <h5>Firebase</h5>
                                 </div>
-                            </Carousel>
                         </div>
                     </div>                    
                 </div>
