@@ -343,7 +343,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"]
 
 /* --TechStack CSS-- */
 .item {
-  font-size: 50px;
+  width: 30px;
+  height: auto;
 }
 
 .techstack {
