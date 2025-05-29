@@ -342,6 +342,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"]
 }
 
 /* --TechStack CSS-- */
+.item {
+  font-size: 50px;
+}
+
 .techstack {
   padding: 0 0 50px 0;
   position: relative;
