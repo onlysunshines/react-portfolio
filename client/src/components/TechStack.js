@@ -7,152 +7,79 @@ import NodeJS from '../assets/img/nodejs-1.svg';
 import Tailscale from '../assets/img/Tailscale.png';
 import Render from '../assets/img/Render.png';
 import Firebase from '../assets/img/firebase-2.svg';
-import { useState } from 'react';
-import { Image } from 'react-bootstrap';
+import 'react-multi-carousel/lib/styles.css';
+import colorSharp from '../assets/img/color-sharp.png';
 // import arrow1 from '../assets/img/arrow1.svg';
 // import arrow2 from '../assets/img/arrow2.svg';
 
 export const TechStack = () => {
-    const [images, setImages] = useState([
-        {
-        id: 1,
-        src: HTML5,
-        alt: "HTML Logo",
-        title: "Hypertext Markup Language Logo"
+    const responsive = {
+        superLargeDesktop: {
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
         },
-        {
-        id: 2,
-        src: CSS3,
-        alt: "CSS Logo",
-        title: "Cascading Style Sheets Logo"
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
         },
-        {
-        id: 3,
-        src: JS5,
-        alt: "JS5 Logo",
-        title: "JavaScript 5 Logo"
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
         },
-        {
-        id: 4,
-        src: ReactLogo,
-        alt: "React Logo",
-        title: "React Logo"
-        },
-        {
-        id: 5,
-        src: EX,
-        alt: "Express Logo",
-        title: "Express Framework Logo"
-        },
-        {
-        id: 6,
-        src: NodeJS,
-        alt: "NodeJS Logo",
-        title: "NodeJS Logo"
-        },
-        {
-        id: 7,
-        src: Tailscale,
-        alt: "Tailscale Logo",
-        title: "Tailscale Logo"
-        },
-        {
-        id: 8,
-        src: Render,
-        alt: "Render Logo",
-        title: "Render Logo"
-        },
-        {
-        id: 9,
-        src: Firebase,
-        alt: "Firebase Logo",
-        title: "Firebase Logo"
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
         }
-    ]);
-
-    const [selectedImage, setSelectedImage] = useState(null);
-    const [imageErrors, setImageErrors] = useState(new Set());
-
-    const handleImageError = (imageId) => {
-        setImageErrors(prev => new Set([...prev, imageId]));
     };
-
-    const handleImageClick = (image) => {
-        setSelectedImage(Image);
-    };
-
-    const closeModal = () => {
-        setSelectedImage(null);
-    }
 
     return (
-    <div className="techstack">
-      <h1 className="techstack">
-        Image Gallery
-      </h1>
-      
-      {/* Grid container */}
-      <div className="techstack">
-        {images.map((image) => (
-          <div
-            key={image.id}
-            className="techstack"
-            onClick={() => handleImageClick(image)}
-          >
-            {!imageErrors.has(image.id) ? (
-              <>
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="techstack"
-                  onError={() => handleImageError(image.id)}
-                  loading="lazy"
-                />
-                <div className="techstack">
-                  <h3 className="techstack">
-                    {image.title}
-                  </h3>
+        <section className="techstack" id="techstacks">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="skill-bx wow zoomIn">
+                            <h2>Technological Stack</h2>
+                            <p>I am constantly improving my knowledge base and expanding my comfort zone.<br></br>This is my current Full Stack Work Flow List of Frameworks/Languages/Applications</p>
+                                <div className="item">
+                                    <img src={HTML5} alt="HTML Logo" />
+                                    <h5>HTML</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={CSS3} alt="CSS Logo" />
+                                    <h5>CSS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={JS5} alt="JavaScript Logo" />
+                                    <h5>JavaScript</h5>
+                                </div><div className="item">
+                                    <img src={ReactLogo} alt="React Logo" />
+                                    <h5>React</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={EX} alt="Express Logo" />
+                                    <h5>Express</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={NodeJS} alt="Node JS Logo" />
+                                    <h5>Node JS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={Tailscale} alt="Tailscale Logo" />
+                                    <h5>Tailscale</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={Render} alt="Render Logo" />
+                                    <h5>Render</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={Firebase} alt="Render Logo" />
+                                    <h5>Firebase</h5>
+                                </div>
+                        </div>
+                    </div>                    
                 </div>
-              </>
-            ) : (
-              <div className="techstack">
-                <div className="techstack">
-                  <div className="techstack">📷</div>
-                  <p>Image not available</p>
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      {/* Modal for enlarged image view */}
-      {selectedImage && (
-        <div 
-          className="item"
-          onClick={closeModal}
-        >
-          <div className="techstack">
-            <button
-              onClick={closeModal}
-              className="techstack"
-            >
-              ×
-            </button>
-            <img
-              src={selectedImage.src}
-              alt={selectedImage.alt}
-              className="techstack"
-              onClick={(e) => e.stopPropagation()}
-            />
-            <div className="techstack">
-              <h3 className="techstack">
-                {selectedImage.title}
-              </h3>
             </div>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
+            <img className="background-image-left" src={colorSharp} alt="Background" />
+        </section>
+    )
+}
