@@ -3,7 +3,7 @@ import CSS3 from '../assets/img/CSS3.png';
 import JS5 from '../assets/img/javascript-r.svg';
 import ReactLogo from '../assets/img/react-2.svg';
 import EX from '../assets/img/express-109.svg';
-import NodeJS from '../assets/img/NodeJS.png';
+import NodeJS from '../assets/img/nodejs-1.svg';
 import Tailscale from '../assets/img/Tailscale.png';
 import Render from '../assets/img/Render.png';
 import Firebase from '../assets/img/Firebase.png';
