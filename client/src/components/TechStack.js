@@ -7,79 +7,152 @@ import NodeJS from '../assets/img/nodejs-1.svg';
 import Tailscale from '../assets/img/Tailscale.png';
 import Render from '../assets/img/Render.png';
 import Firebase from '../assets/img/firebase-2.svg';
-import 'react-multi-carousel/lib/styles.css';
-import colorSharp from '../assets/img/color-sharp.png';
+import React, { useState } from 'react';
+import { Image } from 'react-bootstrap';
 // import arrow1 from '../assets/img/arrow1.svg';
 // import arrow2 from '../assets/img/arrow2.svg';
 
 export const TechStack = () => {
-    const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5
+    const techArray = useState([
+        {
+        id: 1,
+        src: HTML5,
+        alt: "HTML Logo",
+        title: "Hypertext Markup Language Logo"
         },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
+        {
+        id: 2,
+        src: CSS3,
+        alt: "CSS Logo",
+        title: "Cascading Style Sheets Logo"
         },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
+        {
+        id: 3,
+        src: JS5,
+        alt: "JS5 Logo",
+        title: "JavaScript 5 Logo"
         },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
+        {
+        id: 4,
+        src: ReactLogo,
+        alt: "React Logo",
+        title: "React Logo"
+        },
+        {
+        id: 5,
+        src: EX,
+        alt: "Express Logo",
+        title: "Express Framework Logo"
+        },
+        {
+        id: 6,
+        src: NodeJS,
+        alt: "NodeJS Logo",
+        title: "NodeJS Logo"
+        },
+        {
+        id: 7,
+        src: Tailscale,
+        alt: "Tailscale Logo",
+        title: "Tailscale Logo"
+        },
+        {
+        id: 8,
+        src: Render,
+        alt: "Render Logo",
+        title: "Render Logo"
+        },
+        {
+        id: 9,
+        src: Firebase,
+        alt: "Firebase Logo",
+        title: "Firebase Logo"
         }
+    ]);
+
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [imageErrors, setImageErrors] = useState(new Set());
+
+    const handleImageError = (imageId) => {
+        setImageErrors(prev => new Set([...prev, imageId]));
     };
 
+    const handleImageClick = (image) => {
+        setSelectedImage(Image);
+    };
+
+    const closeModal = () => {
+        setSelectedImage(null);
+    }
+
     return (
-        <section className="techstack" id="techstacks">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="skill-bx wow zoomIn">
-                            <h2>Technological Stack</h2>
-                            <p>I am constantly improving my knowledge base and expanding my comfort zone.<br></br>This is my current Full Stack Work Flow List of Frameworks/Languages/Applications</p>
-                                <div className="item">
-                                    <img src={HTML5} alt="HTML Logo" />
-                                    <h5>HTML</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={CSS3} alt="CSS Logo" />
-                                    <h5>CSS</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={JS5} alt="JavaScript Logo" />
-                                    <h5>JavaScript</h5>
-                                </div><div className="item">
-                                    <img src={ReactLogo} alt="React Logo" />
-                                    <h5>React</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={EX} alt="Express Logo" />
-                                    <h5>Express</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={NodeJS} alt="Node JS Logo" />
-                                    <h5>Node JS</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={Tailscale} alt="Tailscale Logo" />
-                                    <h5>Tailscale</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={Render} alt="Render Logo" />
-                                    <h5>Render</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={Firebase} alt="Render Logo" />
-                                    <h5>Firebase</h5>
-                                </div>
-                        </div>
-                    </div>                    
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
+        Image Gallery
+      </h1>
+      
+      {/* Grid container */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {images.map((image) => (
+          <div
+            key={image.id}
+            className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+            onClick={() => handleImageClick(image)}
+          >
+            {!imageErrors.has(image.id) ? (
+              <>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  onError={() => handleImageError(image.id)}
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity duration-300 flex items-center justify-center">
+                  <h3 className="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {image.title}
+                  </h3>
                 </div>
+              </>
+            ) : (
+              <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
+                <div className="text-center text-gray-500">
+                  <div className="text-4xl mb-2">📷</div>
+                  <p>Image not available</p>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Modal for enlarged image view */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          onClick={closeModal}
+        >
+          <div className="relative max-w-4xl max-h-full">
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-colors z-10"
+            >
+              ×
+            </button>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              className="max-w-full max-h-screen object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <div className="absolute bottom-4 left-4 right-4 text-center">
+              <h3 className="text-white text-xl font-semibold bg-black bg-opacity-50 rounded px-4 py-2 inline-block">
+                {selectedImage.title}
+              </h3>
             </div>
-            <img className="background-image-left" src={colorSharp} alt="Background" />
-        </section>
-    )
-}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
