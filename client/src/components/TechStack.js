@@ -7,13 +7,13 @@ import NodeJS from '../assets/img/nodejs-1.svg';
 import Tailscale from '../assets/img/Tailscale.png';
 import Render from '../assets/img/Render.png';
 import Firebase from '../assets/img/firebase-2.svg';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Image } from 'react-bootstrap';
 // import arrow1 from '../assets/img/arrow1.svg';
 // import arrow2 from '../assets/img/arrow2.svg';
 
 export const TechStack = () => {
-    const techArray = useState([
+    const [images, setImages] = useState([
         {
         id: 1,
         src: HTML5,
