@@ -1,6 +1,7 @@
 import HTML5 from '../assets/img/HTML5.png';
 import CSS3 from '../assets/img/CSS3.png';
 import JS5 from '../assets/img/JS.png';
+import ReactLogo from '../assets/img/react-2.svg';
 import EX from '../assets/img/Express.png';
 import NodeJS from '../assets/img/NodeJS.png';
 import Tailscale from '../assets/img/Tailscale.png';
@@ -50,6 +51,9 @@ export const TechStack = () => {
                                 <div className="item">
                                     <img src={JS5} alt="JavaScript Logo" />
                                     <h5>JavaScript</h5>
+                                </div><div className="item">
+                                    <img src={ReactLogo} alt="React Logo" />
+                                    <h5>React</h5>
                                 </div>
                                 <div className="item">
                                     <img src={EX} alt="Express Logo" />
