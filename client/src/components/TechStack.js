@@ -6,7 +6,7 @@ import EX from '../assets/img/express-109.svg';
 import NodeJS from '../assets/img/nodejs-1.svg';
 import Tailscale from '../assets/img/Tailscale.png';
 import Render from '../assets/img/Render.png';
-import Firebase from '../assets/img/Firebase.png';
+import Firebase from '../assets/img/firebase-2.svg';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from '../assets/img/color-sharp.png';
 // import arrow1 from '../assets/img/arrow1.svg';
