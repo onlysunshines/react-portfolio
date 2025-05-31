@@ -1,6 +1,6 @@
 import HTML5 from '../assets/img/HTML5.png';
 import CSS3 from '../assets/img/CSS3.png';
-import JS5 from '../assets/img/JS.png';
+import JS5 from '../assets/img/javascript-r.svg';
 import ReactLogo from '../assets/img/react-2.svg';
 import EX from '../assets/img/Express.png';
 import NodeJS from '../assets/img/NodeJS.png';
