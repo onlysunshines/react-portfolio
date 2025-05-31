@@ -86,17 +86,17 @@ export const TechStack = () => {
     }
 
     return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
+    <div className="techstack">
+      <h1 className="techstack">
         Image Gallery
       </h1>
       
       {/* Grid container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="techstack">
         {images.map((image) => (
           <div
             key={image.id}
-            className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+            className="techstack"
             onClick={() => handleImageClick(image)}
           >
             {!imageErrors.has(image.id) ? (
@@ -104,20 +104,20 @@ export const TechStack = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="techstack"
                   onError={() => handleImageError(image.id)}
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity duration-300 flex items-center justify-center">
-                  <h3 className="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="techstack">
+                  <h3 className="techstack">
                     {image.title}
                   </h3>
                 </div>
               </>
             ) : (
-              <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-4xl mb-2">📷</div>
+              <div className="techstack">
+                <div className="techstack">
+                  <div className="techstack">📷</div>
                   <p>Image not available</p>
                 </div>
               </div>
@@ -129,24 +129,24 @@ export const TechStack = () => {
       {/* Modal for enlarged image view */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          className="item"
           onClick={closeModal}
         >
-          <div className="relative max-w-4xl max-h-full">
+          <div className="techstack">
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-colors z-10"
+              className="techstack"
             >
               ×
             </button>
             <img
               src={selectedImage.src}
               alt={selectedImage.alt}
-              className="max-w-full max-h-screen object-contain rounded-lg"
+              className="techstack"
               onClick={(e) => e.stopPropagation()}
             />
-            <div className="absolute bottom-4 left-4 right-4 text-center">
-              <h3 className="text-white text-xl font-semibold bg-black bg-opacity-50 rounded px-4 py-2 inline-block">
+            <div className="techstack">
+              <h3 className="techstack">
                 {selectedImage.title}
               </h3>
             </div>
