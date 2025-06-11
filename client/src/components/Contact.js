@@ -51,7 +51,7 @@ export const Contact = () => {
             } catch (error) {
                 console.error("Fetch error:", error);
                 setButtonText("Send");
-                setStatus({ success: false, message: 'Something is eating shit.  Not what you hoped for?'})
+                setStatus({ success: false, message: 'out on lunch. brb'})
             }      
     };
 
