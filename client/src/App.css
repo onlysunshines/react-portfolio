@@ -353,7 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"]
   padding: 2rem;
   justify-items: center;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: transparent;
 }
 
 .logo-grid img {
