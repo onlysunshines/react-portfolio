@@ -40,41 +40,17 @@ export const TechStack = () => {
                         <div className="skill-bx wow zoomIn">
                             <h2>Technological Stack</h2>
                             <p>I am constantly improving my knowledge base and expanding my comfort zone.<br></br>This is my current Full Stack Work Flow List of Frameworks/Languages/Applications</p>
-                                <div className="item">
-                                    <img src={HTML5} alt="HTML Logo" />
-                                    <h5>HTML</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={CSS3} alt="CSS Logo" />
-                                    <h5>CSS</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={JS5} alt="JavaScript Logo" />
-                                    <h5>JavaScript</h5>
-                                </div><div className="item">
+                                <section class="logo-grid">
+                                    <img src={HTML5} alt="HTML5 Logo" />
+                                    <img src={CSS3} alt="CSS3 Logo" />
+                                    <img src={JS5} alt="JS5 Logo" />
                                     <img src={ReactLogo} alt="React Logo" />
-                                    <h5>React</h5>
-                                </div>
-                                <div className="item">
                                     <img src={EX} alt="Express Logo" />
-                                    <h5>Express</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={NodeJS} alt="Node JS Logo" />
-                                    <h5>Node JS</h5>
-                                </div>
-                                <div className="item">
+                                    <img src={NodeJS} alt="NodeJS Logo" />
                                     <img src={Tailscale} alt="Tailscale Logo" />
-                                    <h5>Tailscale</h5>
-                                </div>
-                                <div className="item">
                                     <img src={Render} alt="Render Logo" />
-                                    <h5>Render</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={Firebase} alt="Render Logo" />
-                                    <h5>Firebase</h5>
-                                </div>
+                                    <img src={Firebase} alt="Firebase Logo" />
+                                </section>
                         </div>
                     </div>                    
                 </div>
