@@ -7,6 +7,9 @@ import NodeJS from '../assets/img/nodejs-1.svg';
 import Tailscale from '../assets/img/Tailscale.png';
 import Render from '../assets/img/Render.png';
 import Firebase from '../assets/img/firebase-2.svg';
+import JQuery from '../assets/img/jquery.svg';
+import NPM from '../assets/img/npm.svg';
+import VSCode from '../assets/img/VSCode.svg';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from '../assets/img/color-sharp.png';
 // import arrow1 from '../assets/img/arrow1.svg';
@@ -50,6 +53,9 @@ export const TechStack = () => {
                                     <img src={Tailscale} alt="Tailscale Logo" />
                                     <img src={Render} alt="Render Logo" />
                                     <img src={Firebase} alt="Firebase Logo" />
+                                    <img src={JQuery} alt="JQuery Logo" />
+                                    <img src={NPM} alt="NPM Logo" />
+                                    <img src={VSCode} alt="vscode Logo" />
                                 </section>
                         </div>
                     </div>                    
