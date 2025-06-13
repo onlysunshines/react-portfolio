@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.831388a3.css",
-    "main.js": "/static/js/main.06480e35.js",
+    "main.js": "/static/js/main.1ebd92be.js",
     "static/js/453.bb257cf5.chunk.js": "/static/js/453.bb257cf5.chunk.js",
     "static/media/OS.jpg": "/static/media/OS.2bded7d2be8d595869af.jpg",
     "static/media/color-sharp.png": "/static/media/color-sharp.bea361cfef80fefc2d1e.png",
@@ -28,19 +28,22 @@
     "static/media/nodejs-1.svg": "/static/media/nodejs-1.52cbf9a89f44655c0375b9e9f88bf9c5.svg",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/express-109.svg": "/static/media/express-109.75fff9be2f3b289ba7be1f43a08f7a4c.svg",
+    "static/media/jquery.svg": "/static/media/jquery.a720425624c73a7db991c7b40927c65c.svg",
     "static/media/react-2.svg": "/static/media/react-2.e68b35f4774979ae220b1d5d7b345b00.svg",
     "static/media/nav-icon3.svg": "/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
     "static/media/firebase-2.svg": "/static/media/firebase-2.276e110384b4d3db427b943310172dc9.svg",
+    "static/media/VSCode.svg": "/static/media/VSCode.b8b1e001813039750e6c05c236ab0d46.svg",
     "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/index.html",
+    "static/media/npm.svg": "/static/media/npm.5066c092080d10750a0352c3a2f64c6c.svg",
     "static/media/javascript-r.svg": "/static/media/javascript-r.a4370a88cda4f608d472b463536604b0.svg",
     "static/media/nav-icon2.svg": "/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.831388a3.css.map": "/static/css/main.831388a3.css.map",
-    "main.06480e35.js.map": "/static/js/main.06480e35.js.map",
+    "main.1ebd92be.js.map": "/static/js/main.1ebd92be.js.map",
     "453.bb257cf5.chunk.js.map": "/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.831388a3.css",
-    "static/js/main.06480e35.js"
+    "static/js/main.1ebd92be.js"
   ]
 }
