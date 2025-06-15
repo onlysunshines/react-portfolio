@@ -358,7 +358,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"]
   backdrop-filter: blur(10px) saturate(180%);
   -webkit-backdrop-filter: blur(10px) saturate(180%); /* Safari support */
   border-radius: 1rem;
-  /*border: 1px solid rgba(255, 255, 255, 0.3);*/
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .logo-grid img {
@@ -366,7 +366,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"]
   max-height: 60px;
   object-fit: contain;
   transition: transform 0.3s ease;
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.285));
+  /*filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.285));*/
 }
 
 .logo-grid img:hover {
