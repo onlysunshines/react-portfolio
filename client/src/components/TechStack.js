@@ -10,6 +10,9 @@ import Firebase from '../assets/img/firebase-2.svg';
 import JQuery from '../assets/img/jquery.svg';
 import NPM from '../assets/img/npm.svg';
 import VSCode from '../assets/img/VSCode.svg';
+import Mocha from '../assets/img/mocha.svg';
+import Chai from '../assets/img/chai.svg';
+import Github from '../assets/img/github.svg';
 import OpenAI from '../assets/img/openai.svg';
 import ClaudeAI from '../assets/img/claudeai.svg';
 import GeminiAI from '../assets/img/geminiai.svg';
@@ -59,6 +62,9 @@ export const TechStack = () => {
                                     <img src={JQuery} alt="JQuery Logo" />
                                     <img src={NPM} alt="NPM Logo" />
                                     <img src={VSCode} alt="VSCode Logo" />
+                                    <img src={Mocha} alt="Mocha Logo" />
+                                    <img src={Chai} alt="Chai Logo" />
+                                    <img src={Github} alt="Github Logo" />
                                     <img src={OpenAI} alt="OpenAI Logo" />
                                     <img src={ClaudeAI} alt="ClaudeAI Logo" />
                                     <img src={GeminiAI} alt="GeminiAI Logo" />
