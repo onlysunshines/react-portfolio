@@ -10,6 +10,9 @@ import Firebase from '../assets/img/firebase-2.svg';
 import JQuery from '../assets/img/jquery.svg';
 import NPM from '../assets/img/npm.svg';
 import VSCode from '../assets/img/VSCode.svg';
+import OpenAI from '../assets/img/openai.svg';
+import ClaudeAI from '../assets/img/claudeai.svg';
+import GeminiAI from '../assets/img/geminiai.svg';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from '../assets/img/color-sharp.png';
 // import arrow1 from '../assets/img/arrow1.svg';
@@ -55,7 +58,11 @@ export const TechStack = () => {
                                     <img src={Firebase} alt="Firebase Logo" />
                                     <img src={JQuery} alt="JQuery Logo" />
                                     <img src={NPM} alt="NPM Logo" />
-                                    <img src={VSCode} alt="vscode Logo" />
+                                    <img src={VSCode} alt="VSCode Logo" />
+                                    <img src={OpenAI} alt="OpenAI Logo" />
+                                    <img src={ClaudeAI} alt="ClaudeAI Logo" />
+                                    <img src={GeminiAI} alt="GeminiAI Logo" />
+                                    <img src={} alt="vscode Logo" />
                                 </section>
                         </div>
                     </div>                    
