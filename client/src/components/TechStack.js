@@ -62,7 +62,6 @@ export const TechStack = () => {
                                     <img src={OpenAI} alt="OpenAI Logo" />
                                     <img src={ClaudeAI} alt="ClaudeAI Logo" />
                                     <img src={GeminiAI} alt="GeminiAI Logo" />
-                                    <img src={} alt="vscode Logo" />
                                 </section>
                         </div>
                     </div>                    
