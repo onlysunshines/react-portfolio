@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import fallbackImg from '../assets/img/fallbackImg.png'
 
 export const GitHub = ({ username, fallbackImg }) => {
   const [hasError, setHasError] = useState(false);
