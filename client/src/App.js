@@ -18,7 +18,7 @@ function App() {
       <Banner />
       <Certs />
       <TechStack />
-      <GitHub />
+      {/*<GitHub />*/}
       <Projects />
       <Contact />
       <Footer />
