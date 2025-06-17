@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const GitHubContributions = ({ username, fallbackImg }) => {
+export const GitHub = ({ username, fallbackImg }) => {
   const [hasError, setHasError] = useState(false);
 
   const contributionsUrl = `https://github.com/users/${username}/contributions`;
