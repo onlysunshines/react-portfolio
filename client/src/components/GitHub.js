@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const GitHubContributions = ({ username }) => {
+export const GitHub = ({ username }) => {
   const url = `https://github.com/users/${username}/contributions`;
 
   return (
