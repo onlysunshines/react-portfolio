@@ -1,19 +1,20 @@
-import React from "react";
+import React from 'react';
 
-const GitHubContributions = ({ onlysunshines }) => {
-  const url = `https://github.com/users/${onlysunshines}/contributions`;
+export const GitHubContributions = ({ username }) => {
+  const url = `https://github.com/users/${username}/contributions`;
 
   return (
-    <div className="w-full overflow-auto bg-white rounded-xl shadow p-4">
-      <h2 className="text-xl font-semibold mb-4">GitHub Contributions</h2>
+    <div className="github-contributions-box">
+      <h4>GitHub Contributions</h4>
+      <span>Recent activity graph for @{username}</span>
+      <br />
+      <br />
       <iframe
         title="GitHub Contributions"
         src={url}
-        style={{ width: "100%", height: "200px", border: "none" }}
+        style={{ width: '100%', height: '200px', border: 'none' }}
         loading="lazy"
       />
     </div>
   );
 };
-
-export default GitHubContributions;
