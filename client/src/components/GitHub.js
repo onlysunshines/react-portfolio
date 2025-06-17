@@ -4,7 +4,7 @@ import fallbackImg from '../assets/img/fallbackImg.png'
 export const GitHub = ({ username, fallbackImg }) => {
   const [hasError, setHasError] = useState(false);
 
-  const contributionsUrl = `https://github.com/users/${username}/contributions`;
+  const contributionsUrl = `https://github.com/onlysunshines/contributions`;
 
   return (
     <div className="github-contributions-box">
