@@ -3,7 +3,7 @@ import FrontEndCertificate from '../assets/img/FrontEndCertificate.jpeg';
 export const Certs = () => {
     
     return (
-        <section className="skill" id="skills">
+        <section className="cert" id="certs">
             <div className="container">
                 <div className="row">
                     <div className="col-12">

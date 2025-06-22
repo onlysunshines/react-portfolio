@@ -5,7 +5,7 @@ import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import { Certs } from './components/Certs';
 import { TechStack } from './components/TechStack';
-import { GitHub } from './components/GitHub';
+// import { GitHub } from './components/GitHub';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
